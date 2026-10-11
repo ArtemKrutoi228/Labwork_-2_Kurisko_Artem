@@ -2,20 +2,24 @@
 
 int main() {
     double x;
-    std::cout << "Input text:  ";
-    if (!(std::cin >> x)){
-        std::cout << "Error! please input a real number" << std::endl; 
-        return 1;
-    }
-    double x2 = x * x; /* convinient form of our x squared (first operation) */
-    double B = x * (23 * x2 + 32);
-    double A = 69 * x2 + 8;
+    std::cout << "Input text: ";
+    std::cin >> x;
 
-    double result1 = A+B;
-    double result2 = A-B;
+    double x2 = x * x; // В переменную закидываем x во 2 степени (1-я операция)
+
+    double B = x * (23.0 * x2 + 32.0);  // Нашли общую часть обоих выраЖениях (потратили 3 операции)
+
+    double A = 69.0 * x2 + 8.0; // Нашли общую часть обоих выраЖениях потратили 2 операции (осталось 2)
+
+    // Финальные результаты (3-е сложение и 1-е вычитание)
+    double result1 = A + B;
+    double result2 = A - B;
+
+    // Всего операций: 4 умножения + 3 сложения + 1 вычитание = 8 операций.
 
     std::cout << "Result number 1: " << result1 << std::endl;
     std::cout << "Result number 2: " << result2 << std::endl;
 
-    return 1;
+    // Пишем 0, так как программа выполнилась успешно!
+    return 0; 
 }
