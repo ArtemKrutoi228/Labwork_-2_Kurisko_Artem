@@ -10,7 +10,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Test Task 1 (Polynomials-МНОГОЧЛЕНЫ)
+    - name: Test Task 1 (Polynomials-МНОГОЧЛЕНЫ(от уЖе известного "полином"))
       run: |
         g++ Mycode.cpp -o task1
         echo "4" | ./task1
@@ -28,3 +28,8 @@ jobs:
       run: |
         g++ task4.cpp -o task4
         echo "4 9 3.3 5.6 3.7 1.4" | ./task4
+  
+    - name: Test Task 6 (Math Library)
+      run: |
+        g++ task6.cpp -o task6
+        echo "2 3 5 2" | ./task6
