@@ -10,17 +10,21 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Test Task 1 (Polynomials)
+    - name: Test Task 1 (Polynomials-МНОГОЧЛЕНЫ)
       run: |
         g++ Mycode.cpp -o task1
         echo "4" | ./task1
         
-    - name: Test Task 2 (Triangle)
+    - name: Test Task 2 (Triangle-ТРЕУГОЛЬНИК)
       run: |
         g++ task2.cpp -o task2
         echo "3 4 5" | ./task2
   
-    - name: Test Task 3 (Progression)
+    - name: Test Task 3 (Progression-ПРОГРЕССИЯ)
       run: |
         g++ task3.cpp -o task3
         echo "20" | ./task3
+    - name: Test Task 4 (Conditions-УСЛОВИЯ)
+      run: |
+        g++ task4.cpp -o task4
+        echo "4 9 3.3 5.6 3.7 1.4" | ./task4
