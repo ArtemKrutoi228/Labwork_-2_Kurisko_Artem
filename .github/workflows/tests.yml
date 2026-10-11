@@ -1,0 +1,16 @@
+name: C++ Automated Labs Test
+
+on: [push, pull_request]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Test Task 1 (Polynomials)
+      run: |
+        g++ Mycode.cpp -o task1
+        echo "4" | ./task1
