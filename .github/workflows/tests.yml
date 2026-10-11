@@ -14,3 +14,8 @@ jobs:
       run: |
         g++ Mycode.cpp -o task1
         echo "4" | ./task1
+        
+    - name: Test Task 2 (Triangle)
+      run: |
+        g++ task2.cpp -o task2
+        echo "3 4 5" | ./task2
