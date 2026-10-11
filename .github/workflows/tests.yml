@@ -33,3 +33,7 @@ jobs:
       run: |
         g++ task6.cpp -o task6
         echo "2 3 5 2" | ./task6
+    - name: Test Task 7 (Switch Operator)
+      run: |
+        g++ task7.cpp -o task7
+        echo "-13.8 8.9 25 56" | ./task7
