@@ -19,3 +19,8 @@ jobs:
       run: |
         g++ task2.cpp -o task2
         echo "3 4 5" | ./task2
+  
+    - name: Test Task 3 (Progression)
+      run: |
+        g++ task3.cpp -o task3
+        echo "20" | ./task3
