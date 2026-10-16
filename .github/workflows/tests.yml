@@ -43,3 +43,8 @@ jobs:
       run: |
           g++ -fsanitize=address,undefined task8.cpp -o task8
           echo "-1 1 5 1 2 5" | ./task8
+
+    - name: Test Task 9 (Functions-ФУНКЦИИ)
+      run: |
+          g++ task9.cpp -o task9     #Напомню санитайзеру уЖе не нуЖны - в задании ничего о них не сказано
+          echo "1 0 2 1" | ./task9
