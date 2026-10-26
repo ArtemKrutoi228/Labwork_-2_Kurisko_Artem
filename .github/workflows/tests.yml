@@ -44,3 +44,7 @@ jobs:
           g++ task10.cpp -o task10
           echo "0 0 2 2.5 0 1.5" | ./task10
 
+    - name: Test Task 11 (Time-ВРЕМЯ)
+      run: |
+          g++ task11.cpp -o task11
+          echo "23 50 0 20" | ./task11 # специально подобраны неприятные числа
