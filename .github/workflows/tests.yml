@@ -53,4 +53,8 @@ jobs:
       run: |
           g++ task12-1.cpp -o task12-1
           echo "1 -5 4" | ./task12-1
+    - name: Test Task 12-2 (Больше не могу писать на английском, просто 12-2)
+      run: |
+          g++ task12-2.cpp -o task12-2
+          echo "1 -4 5" | ./task12-2
 
