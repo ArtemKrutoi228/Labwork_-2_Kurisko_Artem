@@ -51,6 +51,6 @@ jobs:
 
     - name: Test Task 12-1branch (Biquadratic-БИКВАДРАТНОЕ ЧУДО)
       run: |
-          g++ task12_1.cpp -o task12_1
-          echo "1 -5 4" | ./task12_1
+          g++ task12-1.cpp -o task12-1
+          echo "1 -5 4" | ./task12-1
 
