@@ -2,7 +2,7 @@
 
 int main() {
     double x;
-    std::cout << "Input text: ";
+    std::cout << "Input: ";
     std::cin >> x;
 
     double x2 = x * x; // В переменную закидываем x во 2 степени (1-я операция)
