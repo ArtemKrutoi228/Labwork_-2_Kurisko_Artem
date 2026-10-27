@@ -3,7 +3,7 @@
 
 int main() {
     double a, b, c;
-    std::cout << "a, b, c для ax^4 + bx^2 + c = 0: ";
+    std::cout << "Введите через пробел: a, b, c: ";
     std::cin >> a >> b >> c;
 
     double d = b * b - 4 * a * c;
