@@ -58,3 +58,7 @@ jobs:
           g++ task12-2.cpp -o task12-2
           echo "1 -4 5" | ./task12-2
 
+    - name: Test Task 12-3 
+      run: |
+          g++ task12-3.cpp -o task12-3
+          echo "-6 -11" | ./task12-3
