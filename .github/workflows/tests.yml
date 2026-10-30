@@ -41,5 +41,7 @@ jobs:
   
     - name: Test Task 8 (Geometry-ГЕОМЕТРИЯ НАША)
       run: |
-          g++ -fsanitize=address,undefined task8.cpp -o task8
-          echo "-1 1 5 1 2 5" | ./task8
+        g++ -fsanitize=address,undefined task8.cpp -o task8_asan_ubsan
+        echo "-3 1 5 1 2 5" | ./task8_asan_ubsan
+        g++ -fsanitize=thread task8.cpp -o task8_tsan
+        echo "-3 1 5 1 2 5" | ./task8_tsan
